@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const Cardinfo = ({cardAdd,removeItem}) => {
    const [totalAmonunt,setTotoalAmount] = useState(0);
-   const [alertShow, setAlertShow] = useState(false)
+   const [alertShow, setAlertShow] = useState(false);
 
    useEffect(()=>{
      const calculationTotal = cardAdd.reduce((accumulator,item)=>accumulator + item.price , 0)
